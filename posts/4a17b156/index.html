@@ -47,7 +47,7 @@
 <meta property="og:site_name" content="我的博客">
 <meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-10-08T02:50:56.177Z">
+<meta property="og:updated_time" content="2018-10-08T06:26:09.591Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hello World">
 <meta name="twitter:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
@@ -208,9 +208,8 @@
 
             <br id="mybreak"/>
             
-<script>
-	mybreak.style="display:none";
-</script>
+	<i class="icon icon-lg icon-folder-o"></i>
+	分类：<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/Diary/">Diary</a></li></ul>
 
 
             <i>·</i>
@@ -260,7 +259,7 @@
     <div class="content">
         
 <span class="post-time">
-    最后更新：<time datetime="2018-10-08T02:50:56.177Z" itemprop="dateUpdated">2018-10-08 10:50:56</time>
+    最后更新：<time datetime="2018-10-08T06:26:09.591Z" itemprop="dateUpdated">2018-10-08 14:26:09</time>
 </span>
 
 
@@ -590,6 +589,27 @@ if (window.console && window.console.log) {
 
 
 <!-- 公式渲染 -->
+
+<!-- mathjax config similar to math.stackexchange -->
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    }
+});
+
+MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+});
+</script>
+
+<script async src="//cdn.bootcss.com/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML" async></script>
 
 
 
